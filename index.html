@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sheria na Masharti — Tupendeze TZ</title>
+<meta name="description" content="Terms and Conditions for Tupendeze TZ — salon and beauty booking platform." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --tp-green: #1D9E75;
+  --tp-green-dark: #085041;
+  --tp-coral: #D85A30;
+  --tp-amber: #EF9F27;
+  --tp-bg: #FBFAF7;
+  --tp-surface: #FFFFFF;
+  --tp-ink: #15241F;
+  --tp-ink-muted: #5B6B65;
+  --tp-border: #E4E2DA;
+  --tp-max-width: 1180px;
+  --tp-content-width: 700px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--tp-bg);
+  color: var(--tp-ink);
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--tp-green-dark); }
+
+.tp-header {
+  background: var(--tp-green-dark);
+  color: #fff;
+  padding: 28px 24px 22px;
+}
+
+.tp-header-inner {
+  max-width: var(--tp-max-width);
+  margin: 0 auto;
+}
+
+.tp-eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin: 0 0 6px;
+}
+
+.tp-header h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(28px, 5vw, 38px);
+  margin: 0 0 6px;
+  line-height: 1.15;
+}
+
+.tp-updated {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+}
+
+.tp-layout {
+  max-width: var(--tp-max-width);
+  margin: 0 auto;
+  padding: 36px 24px 80px;
+  display: grid;
+  grid-template-columns: 230px minmax(0, var(--tp-content-width));
+  gap: 48px;
+  align-items: start;
+}
+
+.tp-nav {
+  position: sticky;
+  top: 24px;
+  border-right: 1px solid var(--tp-border);
+  padding-right: 20px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+
+.tp-nav-label {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tp-ink-muted);
+  margin: 0 0 12px;
+}
+
+.tp-nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: tp-counter;
+}
+
+.tp-nav li {
+  counter-increment: tp-counter;
+  margin-bottom: 2px;
+}
+
+.tp-nav a {
+  display: flex;
+  gap: 10px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--tp-ink-muted);
+  font-size: 13.5px;
+  line-height: 1.4;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tp-nav a::before {
+  content: counter(tp-counter, decimal-leading-zero);
+  color: var(--tp-green);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.tp-nav a:hover {
+  background: rgba(29, 158, 117, 0.08);
+  color: var(--tp-ink);
+}
+
+.tp-nav a.active {
+  background: rgba(29, 158, 117, 0.12);
+  color: var(--tp-green-dark);
+  font-weight: 600;
+}
+
+.tp-content section {
+  padding-top: 6px;
+  margin-bottom: 40px;
+  scroll-margin-top: 24px;
+}
+
+.tp-content section:first-child {
+  padding-top: 0;
+}
+
+.tp-section-number {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tp-green);
+  letter-spacing: 0.04em;
+  margin: 0 0 4px;
+}
+
+.tp-content h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 14px;
+  color: var(--tp-ink);
+}
+
+.tp-content p {
+  margin: 0 0 12px;
+  color: var(--tp-ink);
+}
+
+.tp-content ul {
+  margin: 0 0 14px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tp-content li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+  color: var(--tp-ink);
+}
+
+.tp-content li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tp-coral);
+}
+
+.tp-content a {
+  color: var(--tp-green-dark);
+  font-weight: 600;
+}
+
+.tp-divider {
+  border: none;
+  border-top: 1px solid var(--tp-border);
+  margin: 0 0 32px;
+}
+
+.tp-footer {
+  border-top: 1px solid var(--tp-border);
+  padding: 28px 24px 40px;
+  text-align: center;
+  color: var(--tp-ink-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .tp-layout {
+    grid-template-columns: 1fr;
+    padding: 24px 18px 60px;
+  }
+  .tp-nav {
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid var(--tp-border);
+    padding-right: 0;
+    padding-bottom: 18px;
+    margin-bottom: 8px;
+    max-height: none;
+  }
+  .tp-nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .tp-nav li { margin-bottom: 0; }
+  .tp-nav a::before { display: none; }
+  .tp-nav a {
+    border: 1px solid var(--tp-border);
+    font-size: 12.5px;
+    padding: 6px 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+</style>
+</head>
+<body>
+
+<header class="tp-header">
+  <div class="tp-header-inner">
+    <p class="tp-eyebrow">Tupendeze TZ</p>
+    <h1>Terms &amp; Conditions</h1>
+    <p class="tp-updated">Last updated: 26 June 2026</p>
+  </div>
+</header>
+
+<div class="tp-layout">
+  <nav class="tp-nav" aria-label="Terms sections">
+    <p class="tp-nav-label">Sections</p>
+    <ol>
+      <li><a href="#acceptance-of-terms">Acceptance Of Terms</a></li><li><a href="#eligibility">Eligibility</a></li><li><a href="#nature-of-our-platform">Nature Of Our Platform</a></li><li><a href="#user-accounts">User Accounts</a></li><li><a href="#user-data-privacy">User Data Privacy</a></li><li><a href="#user-obligations">User Obligations</a></li><li><a href="#prohibited-conducts">Prohibited Conducts</a></li><li><a href="#appointments-and-orders">Appointments And Orders</a></li><li><a href="#pricing-and-payments">Pricing And Payments</a></li><li><a href="#free-trials">Free Trials</a></li><li><a href="#recurring-paid-subscriptions">Recurring Paid Subscriptions</a></li><li><a href="#cancellation-of-recurring-paid-subscriptions">Cancellation Of Recurring Paid Subscriptions</a></li><li><a href="#refund-policy">Refund Policy</a></li><li><a href="#appointment-cancellation-policy">Appointment Cancellation Policy</a></li><li><a href="#intellectual-property">Intellectual Property</a></li><li><a href="#reviews-and-user-contents">Reviews And User Contents</a></li><li><a href="#suspension-and-terminations-by-us">Suspension And Terminations By Us</a></li><li><a href="#account-termination-by-user">Account Termination By User</a></li><li><a href="#disclaimers">Disclaimers</a></li><li><a href="#limitation-of-liability">Limitation Of Liability</a></li><li><a href="#health-and-cosmetic-disclaimer">Health And Cosmetic Disclaimer</a></li><li><a href="#links-to-other-websites">Links To Other Websites</a></li><li><a href="#fraud-and-chargeback">Fraud And Chargeback</a></li><li><a href="#governing-law">Governing Law</a></li><li><a href="#changes-to-terms">Changes To Terms</a></li><li><a href="#contact-information">Contact Information</a></li>
+    </ol>
+  </nav>
+
+  <main class="tp-content">
+    <section id="acceptance-of-terms">
+  <p class="tp-section-number">01</p>
+  <h2>Acceptance Of Terms</h2>
+  <p>By creating an account, browsing, booking salon services, purchasing cosmetics, or using any part of our platform, you agree to be legally bound by these Terms.</p>
+<p>If you do not agree, please do not use the platform.</p>
+</section><section id="eligibility">
+  <p class="tp-section-number">02</p>
+  <h2>Eligibility</h2>
+  <p>You must be at least 18 years old, or the age of majority in your jurisdiction, to use paid services and make purchases.</p>
+<p>If you are under 18, use is permitted only with parental or guardian consent.</p>
+</section><section id="nature-of-our-platform">
+  <p class="tp-section-number">03</p>
+  <h2>Nature Of Our Platform</h2>
+  <p>Our platform acts as a marketplace and service facilitator connecting users with:</p>
+<ul><li>salons</li><li>beauty professionals</li><li>cosmetic shops</li><li>product vendors</li></ul>
+<p>We may not be the direct seller or service provider unless clearly stated.</p>
+<p>Third-party salons and shops are independently responsible for their services, products, prices, and conduct.</p>
+</section><section id="user-accounts">
+  <p class="tp-section-number">04</p>
+  <h2>User Accounts</h2>
+  <p>Users must provide accurate information, including:</p>
+<ul><li>full name</li><li>email</li><li>phone number</li><li>payment details where required</li></ul>
+<p>You are responsible for maintaining the confidentiality of your password and all activities under your account.</p>
+<p>You must notify us immediately of unauthorized access.</p>
+</section><section id="user-data-privacy">
+  <p class="tp-section-number">05</p>
+  <h2>User Data Privacy</h2>
+  <p>We collect and process personal data including:</p>
+<ul><li>name</li><li>phone number</li><li>email address</li><li>booking history</li><li>order history</li><li>IP address</li><li>usage analytics</li></ul>
+<p>Your data is used to:</p>
+<ul><li>process bookings</li><li>manage subscriptions</li><li>improve platform performance</li><li>prevent fraud</li><li>comply with legal obligations</li></ul>
+</section><section id="user-obligations">
+  <p class="tp-section-number">06</p>
+  <h2>User Obligations</h2>
+  <p>Users agree to:</p>
+<ul><li>provide truthful information</li><li>keep account credentials secure</li><li>pay for booked services and purchased products</li><li>respect salon staff and vendors</li><li>comply with local laws</li><li>use the platform lawfully and ethically</li></ul>
+</section><section id="prohibited-conducts">
+  <p class="tp-section-number">07</p>
+  <h2>Prohibited Conducts</h2>
+  <p>Users must not:</p>
+<ul><li>create fake accounts</li><li>impersonate another person or business</li><li>post false reviews</li><li>harass salon staff, vendors, or other users</li><li>upload malicious software or harmful code</li><li>attempt unauthorized access</li><li>scrape, copy, or mine platform data</li><li>manipulate ratings or reviews</li><li>use stolen payment methods</li><li>resell platform services without permission</li><li>engage in fraud or chargeback abuse</li></ul>
+</section><section id="appointments-and-orders">
+  <p class="tp-section-number">08</p>
+  <h2>Appointments And Orders</h2>
+  <p>All bookings and orders are subject to:</p>
+<ul><li>provider availability</li><li>confirmation</li><li>pricing displayed at checkout</li><li>location/service coverage</li></ul>
+<p>Salons and shops reserve the right to reject or reschedule appointments.</p>
+<p>Estimated delivery times are not guaranteed.</p>
+</section><section id="pricing-and-payments">
+  <p class="tp-section-number">09</p>
+  <h2>Pricing And Payments</h2>
+  <p>Prices displayed on the platform may include:</p>
+<ul><li>service charges</li><li>taxes</li><li>delivery fees</li><li>platform commissions</li></ul>
+<p>We reserve the right to update prices at any time before confirmation.</p>
+<p>Payment may be collected through third-party processors.</p>
+</section><section id="free-trials">
+  <p class="tp-section-number">10</p>
+  <h2>Free Trials</h2>
+  <p>If premium features include a free trial:</p>
+<ul><li>trial duration must be clearly stated</li><li>access automatically converts to paid subscription unless canceled before expiry</li><li>one trial per user unless otherwise stated</li></ul>
+<p>Free-trial disclosures should be clear and visible before sign-up.</p>
+</section><section id="recurring-paid-subscriptions">
+  <p class="tp-section-number">11</p>
+  <h2>Recurring Paid Subscriptions</h2>
+  <p>Some services may renew automatically, including:</p>
+<ul><li>premium memberships</li><li>featured salon/shop listings</li><li>vendor plans</li><li>promotional tools</li></ul>
+<p>Subscriptions renew automatically based on the selected billing cycle:</p>
+<ul><li>weekly</li><li>monthly</li><li>yearly</li></ul>
+<p>unless canceled before renewal.</p>
+</section><section id="cancellation-of-recurring-paid-subscriptions">
+  <p class="tp-section-number">12</p>
+  <h2>Cancellation Of Recurring Paid Subscriptions</h2>
+  <p>Users may cancel subscriptions at any time through account settings.</p>
+<p>Cancellation takes effect at the end of the current billing cycle.</p>
+<p>No partial refunds are guaranteed unless required by law.</p>
+</section><section id="refund-policy">
+  <p class="tp-section-number">13</p>
+  <h2>Refund Policy</h2>
+  <p>Refund eligibility may apply for:</p>
+<ul><li>duplicate payments</li><li>non-fulfilled orders</li><li>provider cancellation</li><li>defective cosmetic products</li></ul>
+<p>Refunds may not apply for:</p>
+<ul><li>change of mind after completed service</li><li>used/opened cosmetics unless defective</li><li>missed appointments caused by the user</li><li>late cancellations outside allowed period</li></ul>
+<p>Refund timelines:</p>
+<p>3–14 business days, depending on payment provider.</p>
+</section><section id="appointment-cancellation-policy">
+  <p class="tp-section-number">14</p>
+  <h2>Appointment Cancellation Policy</h2>
+  <p>Users may cancel appointments before the provider&#x27;s cancellation deadline.</p>
+<p>Late cancellation or no-show may incur:</p>
+<ul><li>full charge</li><li>partial charge</li><li>temporary booking restriction</li></ul>
+</section><section id="intellectual-property">
+  <p class="tp-section-number">15</p>
+  <h2>Intellectual Property</h2>
+  <p>All platform content including:</p>
+<ul><li>logos</li><li>app design</li><li>text</li><li>source code</li><li>icons</li><li>graphics</li><li>product images</li><li>trademarks</li></ul>
+<p>is owned by us or our licensors.</p>
+<p>Users should not copy, modify, distribute, or reproduce any content without written permission.</p>
+</section><section id="reviews-and-user-contents">
+  <p class="tp-section-number">16</p>
+  <h2>Reviews And User Contents</h2>
+  <p>Users may post reviews, ratings, photos, and feedback.</p>
+<p>By posting content, you grant us a worldwide, non-exclusive license to use, display, and moderate such content.</p>
+<p>We may remove misleading, abusive, or unlawful content.</p>
+</section><section id="suspension-and-terminations-by-us">
+  <p class="tp-section-number">17</p>
+  <h2>Suspension And Terminations By Us</h2>
+  <p>We may suspend, restrict, or permanently terminate accounts for:</p>
+<ul><li>fraud</li><li>abuse</li><li>policy violations</li><li>suspicious transactions</li><li>repeated cancellations</li><li>fake reviews</li><li>illegal and unethical activities</li></ul>
+<p>Termination may occur without prior notice in serious cases.</p>
+</section><section id="account-termination-by-user">
+  <p class="tp-section-number">18</p>
+  <h2>Account Termination By User</h2>
+  <p>Users may close their account at any time.</p>
+<p>Some data may be retained for:</p>
+<ul><li>legal compliance</li><li>fraud prevention</li><li>dispute resolution</li></ul>
+<p>as required by applicable law.</p>
+</section><section id="disclaimers">
+  <p class="tp-section-number">19</p>
+  <h2>Disclaimers</h2>
+  <p>Services and products are provided &quot;as is&quot; and &quot;as available.&quot;</p>
+<p>We do not guarantee:</p>
+<ul><li>uninterrupted access</li><li>error-free operation</li><li>third-party salon performance</li><li>product suitability for skin or hair type</li><li>specific beauty results</li></ul>
+<p>Users should perform patch testing where applicable.</p>
+</section><section id="limitation-of-liability">
+  <p class="tp-section-number">20</p>
+  <h2>Limitation Of Liability</h2>
+  <p>To the maximum extent permitted by law, we are not liable for:</p>
+<ul><li>allergic reactions</li><li>salon negligence</li><li>product misuse</li><li>missed appointments</li><li>loss of profits</li><li>indirect damages</li><li>third-party actions</li></ul>
+</section><section id="health-and-cosmetic-disclaimer">
+  <p class="tp-section-number">21</p>
+  <h2>Health And Cosmetic Disclaimer</h2>
+  <p>Cosmetic and beauty products may affect individuals differently.</p>
+<p>Users should:</p>
+<ul><li>read ingredient labels</li><li>check allergies</li><li>consult professionals where necessary</li></ul>
+<p>We are not responsible for adverse reactions caused by third-party products.</p>
+</section><section id="links-to-other-websites">
+  <p class="tp-section-number">22</p>
+  <h2>Links To Other Websites</h2>
+  <p>Our platform may contain links to third-party websites, salons, payment providers, and vendors.</p>
+<p>We are not responsible for their content, policies, or practices.</p>
+</section><section id="fraud-and-chargeback">
+  <p class="tp-section-number">23</p>
+  <h2>Fraud And Chargeback</h2>
+  <p>Fraudulent payments, false disputes, and chargeback abuse may lead to:</p>
+<ul><li>account suspension</li><li>legal recovery action</li><li>reporting to payment processors</li></ul>
+</section><section id="governing-law">
+  <p class="tp-section-number">24</p>
+  <h2>Governing Law</h2>
+  <p>These Terms shall be governed by the laws of:</p>
+<p>United Republic of Tanzania</p>
+<p>Any disputes shall be resolved in competent courts within that jurisdiction.</p>
+</section><section id="changes-to-terms">
+  <p class="tp-section-number">25</p>
+  <h2>Changes To Terms</h2>
+  <p>We may update these Terms at any time.</p>
+<p>Continued use after updates means acceptance of the revised Terms.</p>
+</section><section id="contact-information">
+  <p class="tp-section-number">26</p>
+  <h2>Contact Information</h2>
+  <p>For support, disputes, or legal questions:</p>
+<p>Communicate through the app channels or;</p>
+<p>Email us: tupendezetanzania@gmail.com</p>
+</section>
+    <hr class="tp-divider" />
+  </main>
+</div>
+
+<footer class="tp-footer">
+  <p>&copy; 2026 Tupendeze TZ. All rights reserved.</p>
+</footer>
+
+<script>
+
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.tp-nav a'));
+  var sections = links.map(function (a) {
+    return document.getElementById(a.getAttribute('href').slice(1));
+  });
+
+  function setActive() {
+    var pos = window.scrollY + 80;
+    var activeIndex = 0;
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i] && sections[i].offsetTop <= pos) activeIndex = i;
+    }
+    links.forEach(function (a, i) {
+      a.classList.toggle('active', i === activeIndex);
+    });
+  }
+
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+})();
+
+</script>
+
+</body>
+</html>
